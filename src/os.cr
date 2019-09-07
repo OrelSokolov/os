@@ -130,15 +130,15 @@ class OS
     windows?
   end
 
-  def host_cpu
+  def self.host_cpu
     raise NotImplementedError
   end
 
-  def host
+  def self.host
     raise NotImplementedError
   end
 
-  def host_os
+  def self.host_os
     raise NotImplementedError
   end
 

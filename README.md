@@ -25,37 +25,37 @@ require "os"
 
 Make PR if you know how to fix something
 
-| Feature                                         | Support |
-|-------------------------------------------------|---------|
-|  def self.config                                | |
-|  def self.windows?                              | YES |
-|  def self.posix?                                | |
-|  def self.linux?                                | |
-|  def self.freebsd?                              | |
-|  def self.iron_ruby?                            | |
-|  def self.bits                                  | YES |
-|  def self.java?                                 | YES |
-|  def self.ruby_bin                              | |
-|  def self.mac?                                  | |
-|  def self.osx?                                  | |
-|  def self.x?                                    | |
-|  def self.rss_bytes                             | |
-|  def Underlying::bsd?                           | |
-|  def Underlying::windows?                       | |
-|  def Underlying::linux?                         | |
-|  def Underlying::docker?                        | |
-|  def self.cygwin?                               | |
-|  def self.dev_null                              | YES |
-|  def self.report                                | |
-|  def self.cpu_count                             | YES |
-|  def self.open_file_command                     | |
-|  def self.app_config_path(name)                 | |
-|  def self.jruby?                                | |
-|  def self.doze?                                 | |
-|  def host_cpu                                   | |
-|  def host                                       | |
-|  def host_os                                    | |
-|  def self.hwprefs_available?                    | |
+| Feature                                     | Support |
+|---------------------------------------------|---------|
+|  self.windows?                              | YES |
+|  self.cpu_count                             | YES |
+|  self.bits                                  | YES |
+|  self.java?                                 | YES |
+|  self.dev_null                              | YES |
+|  self.config                                | |
+|  self.posix?                                | |
+|  self.linux?                                | |
+|  self.freebsd?                              | |
+|  self.iron_ruby?                            | |
+|  self.ruby_bin                              | |
+|  self.mac?                                  | |
+|  self.osx?                                  | |
+|  self.x?                                    | |
+|  self.rss_bytes                             | |
+|  self.cygwin?                               | |
+|  self.report                                | |
+|  self.open_file_command                     | |
+|  self.app_config_path(name)                 | |
+|  self.jruby?                                | |
+|  self.doze?                                 | |
+|  self.host_cpu                              | |
+|  self.host                                  | |
+|  self.host_os                               | |
+|  hwprefs_available?                         | |
+|  Underlying::bsd?                           | |
+|  Underlying::windows?                       | |
+|  Underlying::linux?                         | |
+|  Underlying::docker?                        | |
 
 ## Contributing
 
