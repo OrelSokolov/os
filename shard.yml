@@ -1,0 +1,9 @@
+name: os
+version: 0.1.0
+
+authors:
+  - Oleg Orlov <orelcokolov@gmail.com>
+
+crystal: 0.30.1
+
+license: MIT
