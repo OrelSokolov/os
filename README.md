@@ -21,10 +21,41 @@ Something may not work
 require "os"
 ```
 
-
 ## Development
 
 Make PR if you know how to fix something
+
+| Feature                                         | Support |
+|-------------------------------------------------|---------|
+|  def self.config                                | |
+|  def self.windows?                              | YES |
+|  def self.posix?                                | |
+|  def self.linux?                                | |
+|  def self.freebsd?                              | |
+|  def self.iron_ruby?                            | |
+|  def self.bits                                  | YES |
+|  def self.java?                                 | YES |
+|  def self.ruby_bin                              | |
+|  def self.mac?                                  | |
+|  def self.osx?                                  | |
+|  def self.x?                                    | |
+|  def self.rss_bytes                             | |
+|  def Underlying::bsd?                           | |
+|  def Underlying::windows?                       | |
+|  def Underlying::linux?                         | |
+|  def Underlying::docker?                        | |
+|  def self.cygwin?                               | |
+|  def self.dev_null                              | YES |
+|  def self.report                                | |
+|  def self.cpu_count                             | YES |
+|  def self.open_file_command                     | |
+|  def self.app_config_path(name)                 | |
+|  def self.jruby?                                | |
+|  def self.doze?                                 | |
+|  def host_cpu                                   | |
+|  def host                                       | |
+|  def host_os                                    | |
+|  def self.hwprefs_available?                    | |
 
 ## Contributing
 
