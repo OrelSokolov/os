@@ -2,7 +2,7 @@ require "crystal/system"
 require "uname"
 
 class OS
-  VERSION = "0.2.0"
+  VERSION = "0.2.1"
 
   property :config
 
@@ -30,7 +30,7 @@ class OS
   end
 
   def self.freebsd?
-    raise NotImplementedError
+    Uname.sysname =~ /FreeBSD/
   end
 
   def self.iron_ruby?

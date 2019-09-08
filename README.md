@@ -35,7 +35,7 @@ Make PR if you know how to fix something
 |  self.config                                | |
 |  self.posix?                                | YES |
 |  self.linux?                                | |
-|  self.freebsd?                              | |
+|  self.freebsd?                              | YES |
 |  self.iron_ruby?                            | |
 |  self.ruby_bin                              | |
 |  self.mac?                                  | |
