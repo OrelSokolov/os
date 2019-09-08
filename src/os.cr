@@ -26,11 +26,11 @@ class OS
 
   # true for linux, false for windows, os x, cygwin
   def self.linux?
-    Uname.sysname =~ /Linux/
+    !!(Uname.sysname =~ /Linux/)
   end
 
   def self.freebsd?
-    Uname.sysname =~ /FreeBSD/
+    !!(Uname.sysname =~ /FreeBSD/)
   end
 
   def self.iron_ruby?
