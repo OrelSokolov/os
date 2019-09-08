@@ -2,7 +2,7 @@ require "crystal/system"
 require "uname"
 
 class OS
-  VERSION = "0.2.1"
+  VERSION = "0.2.2"
 
   property :config
 
