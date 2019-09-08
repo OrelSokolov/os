@@ -33,7 +33,7 @@ Make PR if you know how to fix something
 |  self.java?                                 | YES |
 |  self.dev_null                              | YES |
 |  self.config                                | |
-|  self.posix?                                | |
+|  self.posix?                                | YES |
 |  self.linux?                                | |
 |  self.freebsd?                              | |
 |  self.iron_ruby?                            | |
@@ -41,14 +41,14 @@ Make PR if you know how to fix something
 |  self.mac?                                  | |
 |  self.osx?                                  | |
 |  self.x?                                    | |
-|  self.rss_bytes                             | |
+|  self.rss_bytes                             | YES |
 |  self.cygwin?                               | |
 |  self.report                                | |
 |  self.open_file_command                     | |
 |  self.app_config_path(name)                 | |
-|  self.jruby?                                | |
-|  self.doze?                                 | |
-|  self.host_cpu                              | |
+|  self.jruby?                                | YES |
+|  self.doze?                                 | YES |
+|  self.host_cpu                              | YES |
 |  self.host                                  | |
 |  self.host_os                               | |
 |  hwprefs_available?                         | |

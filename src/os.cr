@@ -1,7 +1,8 @@
 require "crystal/system"
+require "uname"
 
 class OS
-  VERSION = "0.1.0"
+  VERSION = "0.2.0"
 
   property :config
 
@@ -19,12 +20,13 @@ class OS
 
   # true for linux, os x, cygwin
   def self.posix?
-    raise NotImplementedError
+    # assume non windows is posix
+    !self.windows?
   end
 
   # true for linux, false for windows, os x, cygwin
   def self.linux?
-    raise NotImplementedError
+    Uname.sysname =~ /Linux/
   end
 
   def self.freebsd?
@@ -63,7 +65,11 @@ class OS
   # (doesn't include any swap memory that it may be using, just that in actual RAM)
   # raises 'unknown' on jruby currently
   def self.rss_bytes
-    raise NotImplementedError
+    if OS.posix?
+      `ps -o rss= -p #{Process.pid}`.to_i # in kilobytes
+    else
+      raise "unknown rss for this platform"
+    end
   end
 
   class Underlying
@@ -131,7 +137,7 @@ class OS
   end
 
   def self.host_cpu
-    raise NotImplementedError
+    Uname.machine
   end
 
   def self.host
